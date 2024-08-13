@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #232323;
+  background: #000000;
   color: #cdcdcd;
   font-family: "poppins", "sans-serif";
 }
@@ -101,10 +101,10 @@ body {
   position: fixed;
   left: 0; /* Keep the menu on the left */
   top:10px;
-  width: 300px;
+  width: 100%;
   margin: 0;
   padding:  50px;
-  background: #ededed;
+  /* background: #ededed; */
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
