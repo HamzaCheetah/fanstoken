@@ -86,7 +86,8 @@ body {
 
 #menuToggle input:checked ~ span {
   transform: rotate(45deg);
-  background: #232323;
+  /* background: #232323; */
+  
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -102,6 +103,7 @@ body {
   left: 0; /* Keep the menu on the left */
   top:10px;
   width: 100%;
+  height: 100%;
   margin: 0;
   padding:  50px;
   /* background: #ededed; */
@@ -139,6 +141,12 @@ body {
   overflow: hidden;
   transform: translateX(0px); 
   animation: float 3s ease-in-out infinite; 
+}
+
+.backdrop {
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 
@@ -192,3 +200,6 @@ body {
   transform: translatey(0px); 
   animation: float 3s ease-in-out infinite; 
 }
+
+
+/* bg-[url('/img/herobg.png')] bg-no-repeat bg-center bg-cover opacity-50  */
