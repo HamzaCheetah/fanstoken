@@ -126,7 +126,7 @@ body {
 
 @keyframes slideX {
   0% { transform: translateX(0); }
-  50% { transform: translateX(100px); } /* Adjust the value as needed */
+  50% { transform: translateX(20px); } /* Adjust the value as needed */
   100% { transform: translateX(0px); } /* Adjust the value as needed */
 }
 
