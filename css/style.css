@@ -106,7 +106,6 @@ body {
   height: 100%;
   margin: 0;
   padding:  50px;
-  /* background: #ededed; */
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -125,43 +124,30 @@ body {
 
 /* herosection css animation */
 
-@keyframes float {
-  0% {
-      transform: translateX(0px); 
-  }
-  50% {
-      transform: translateX(20px);
-  }
-  100% {
-      transform: translateX(0px); 
-  }
+@keyframes slideX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); } /* Adjust the value as needed */
+  100% { transform: translateX(0px); } /* Adjust the value as needed */
 }
 
-.avatar {
-  overflow: hidden;
-  transform: translateX(0px); 
-  animation: float 3s ease-in-out infinite; 
+.animate-slideX {
+  animation: slideX 5s ease-in-out infinite; /* Adjust duration and timing as needed */
 }
+
+
+
 
 .backdrop {
-  /* background-color: rgba(255, 255, 255, 0.4); */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 
 
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%; 
-  object-fit: cover;
-} */
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -200,6 +186,3 @@ body {
   transform: translatey(0px); 
   animation: float 3s ease-in-out infinite; 
 }
-
-
-/* bg-[url('/img/herobg.png')] bg-no-repeat bg-center bg-cover opacity-50  */
